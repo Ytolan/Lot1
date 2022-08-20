@@ -1,0 +1,27 @@
+*{
+box-sizing: border-box;
+}
+ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 200px;
+background-color: #f1f1f1;
+border:1px solid #555;
+}
+li{
+text-align:center;
+}
+li a{
+display: block;
+padding: 8px 16px;
+text-decoration: none;
+color: #000;
+}
+li a.hme{
+background-color: cadetblue;
+}
+li a:hover:not(.hme){
+background-color: #555;
+color: white;
+}
