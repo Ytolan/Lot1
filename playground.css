@@ -1,16 +1,6 @@
 *{
 box-sizing: border-box;
 }
-
-h1{
-text-align: center;
-border:1px solid #000;
-margin: 10px 50%;
-font-variant: small-caps;
-width: 200px;
-padding: 10px;
-}
-
 ul{
 list-style-type: none;
 padding: 0;
@@ -18,29 +8,23 @@ margin: 0;
 width: 200px;
 background-color: #f1f1f1;
 border: 1px solid #555;
-margin-left:auto;
-margin-right:auto;
 }
 li{
 text-align:center;
 border-bottom: 1px solid black;
 }
-
 li a{
 display: block;
 padding: 8px 16px;
 text-decoration: none;
 color: #000;
 }
-
 li a:last-child{
 border-bottom: none;
 }
-
 li a.hme{
 background-color: cadetblue;
 }
-
 li a:hover:not(.hme){
 background-color: #555;
 color: white;
