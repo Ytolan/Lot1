@@ -1,20 +1,79 @@
 *{
 box-sizing: border-box;
 }
-.playground{
-    text-align: center;
-}
 body{
-    counter-reset: section;
+padding:10px;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #f1f1f1;
+padding:10px;
 }
-h1{
-    counter-reset: subsection;
+.playground{
+text-align: center;
 }
-h2::before{
-    counter-increment: section;
-    content: "Section" counter(section) "."; 
+ul{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
 }
-h2::before{
-    counter-increment: subsection;
-    content: counter(section) "." counter(subsection) " ";
+.header{
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+.header h1{
+    font-size:50px;
+}
+
+.topnav{
+    overflow:hidden;
+    background-color: #333;
+}
+.topnav a{
+    float:left;
+    display:block;
+    color:#f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: #ddd;
+    color:black;
+}
+.leftcolumn{ /*left column*/
+    float: left;
+    width: 75%;
+}
+.rightcolumn{ /*right column*/
+    float: right;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.fakeimg{ /*fake image decoration*/
+    background-color: #aaa;
+    width: 100%;
+    padding:20px;
+}
+.card{ /*creates a card effect*/
+    background-color: white;
+    padding:20px;
+    margin-top: 20px;
+}
+.row:after{
+content: " ";
+display: table;
+clear: both;
+}
+.footer{
+    padding:20px;
+    text-align:center;
+    background:#ddd;
+    margin-top:20px;
+}
+@media screen and (max-width:800px) {
+    .leftcolumn, .rightcolumn{
+        width:100%;
+        padding:0;
+    }
 }
