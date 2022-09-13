@@ -6,5 +6,5 @@ window.onload = function(){
     };
     f.oninput = function() {
         c.value = (f.value - 32) * 5/9; 
-    }
+    };
 };
