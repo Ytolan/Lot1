@@ -95,3 +95,41 @@ body{
     height:300px;
     transform: rotate(180deg);
 }
+
+h2{
+    text-align: center;
+}
+.container{
+    margin:0;
+    padding:0;
+    width:100%;
+    display:inline-block;
+}
+
+.conics{
+    width:33%;
+    height:200px;
+    background-color: red;
+    background-image: conic-gradient(red,yellow,green,blue,black);
+    border-radius: 50%;
+}
+.conics p{
+    text-align:center;
+}
+.linear{
+    background-image:linear-gradient(red,yellow,green,blue,black);
+    width:33%;
+    height:200px;
+    background-color: red;
+    border-radius:50%;
+}
+.linear p{
+    text-align:center;
+}
+.radial{
+    background-image: radial-gradient(red,yellow,green,blue,black);
+    width:32%;
+    height:200px;
+    background-color:red;
+    border-radius:50%;
+}
