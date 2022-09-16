@@ -11,125 +11,74 @@ body{
     color:whitesmoke;
     padding: 15px;
 }
-.navbar{
-    overflow: auto;
-    background-color: #333;
-}
-.navbar a{
-    float:left;
-    display:block;
-    text-decoration: none;
-    padding:14px 16px;
-    color:#f2f2f2;
-    text-align:center;
-}
-.topnav a:hover{
-    background-color: #ddd;
-    color:black;
-}
-.ease{
-    width:100px;
-    height:100px;
-    background: red;
-    transition: width 2s, height 2s, transform 2s;
-    margin-top: 20px;
-    margin-left: 30px;
-}
-.easein{
-    width:100px;
-    height:100px;
-    background: green;
-    transition: width 2s, height 2s, transform 2s;
-}
-.linear{
-    width:100px;
-    height:100px;
-    background:blue;
-    transition: width 2s, height 2s, transform 2s;
-}
-.easeout{
-    width:100px;
-    height:100px;
-    background: yellow;
-    transition: width 2s, height 2s, transform 2s;
-}
-.easeinout{
-    width:100px;
-    height:100px;
-    background: cadetblue;
-    transition: width 2s, height 2s, transform 2s;
-}
-.cubicbezier{
-    width:100px;
-    height:100px;
-    background:yellowgreen;
-    transition: width 2s, height 2s, transform 2s;
-}
-.cubicbezier:hover{
-    width:300px;
-    height:300px;
-    transform:rotate(180deg);
-}
-.easeinout:hover{
-    width:300px;
-    height:300px;
-    transform:rotate(180deg);
-}
-.easeout:hover{
-    width:300px;
-    height:300px;
-    transform:rotate(180deg);
-}
-.linear:hover{
-    width:300px;
-    height:300px;
-    transform: rotate(180deg);
-}
-.easein:hover{
-    width:300px;
-    height:300px;
-    transform: rotate(180deg);
-}
-.ease:hover{
-    width:300px;
-    height:300px;
-    transform: rotate(180deg);
-}
-
 h2{
     text-align: center;
 }
-.container{
-    margin:0;
-    padding:0;
-    width:100%;
-    display:inline-block;
+@keyframes example {
+    0% {background-color: red; left:0px; top:0px;}
+    25% {background-color:yellow; left:200px; top:0px;}
+    50%{background-color:blue; left:200px; top:0px;}
+    75%{background-color: green; left:0px; top:200px;}
+    100%{background-color: red; left:0px; top:0px;}
 }
-
-.conics{
-    width:33%;
-    height:200px;
+@keyframes exp2{
+    0%{background-color: red; left:0px; top:0px;}
+    25%{background-color: yellow; left:200px; top:0px;}
+    50%{background-color: blue; left:200px;top:0px;}
+    75%{background-color:green; left:0px; top:200px;}
+    100%{background-color:red; left:0px; top:0px;}
+}
+@keyframes exp3{
+    0%{background-color: red; left: 0px; top: 0px;}
+    25%{background-color: yellow; left: 200px; top: 0px;}
+    50%{background-color:green; left:0px; top:200px;}
+    75%{background-color: blue; left: 200px; top: 0px;}
+    100%{background-color: red; left: 0px; top: 0px;}
+}
+@keyframes exp4{
+    0%{background-color: red; left:0px; top:0px;}
+    25%{background-color: yellow; left:200px; top:0px;}
+    50%{background-color: blue; left:200px; top:0px;}
+    75%{background-color: green; left:0px;top:200px;}
+    100%{background-color: red; left:0px; top:0px;}
+}
+.ok{
+    width:100px;
+    height:100px;
     background-color: red;
-    background-image: conic-gradient(red,yellow,green,blue,black);
-    border-radius: 50%;
+    position:relative;
+    animation-name:example;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-left: 50%;
+    margin-bottom:10px;
 }
-.conics p{
-    text-align:center;
-}
-.linear{
-    background-image:linear-gradient(red,yellow,green,blue,black);
-    width:33%;
-    height:200px;
+.mhm{
+    width:100px;
+    height:100px;
     background-color: red;
-    border-radius:50%;
+    position: relative;
+    animation: exp2 3s ease-in infinite 2s alternate-reverse;
+    margin-left: 50%;
+    margin-bottom: 10px;
 }
-.linear p{
-    text-align:center;
+.yaya{
+    width:100px;
+    height:100px;
+    background-color: red;
+    position: relative;
+    animation: exp3 3s ease infinite 2s reverse;
+    margin-left: 50%;
+    margin-bottom: 10px;
 }
-.radial{
-    background-image: radial-gradient(red,yellow,green,blue,black);
-    width:32%;
-    height:200px;
-    background-color:red;
-    border-radius:50%;
+.zuzu{
+    width:100px;
+    height:100px;
+    background-color: red;
+    position:relative;
+    animation: exp4 3s ease-out infinite 2s normal;
+    margin-left: 50%;
+    margin-bottom:10px;
 }
