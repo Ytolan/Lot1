@@ -14,71 +14,48 @@ body{
 h2{
     text-align: center;
 }
-@keyframes example {
-    0% {background-color: red; left:0px; top:0px;}
-    25% {background-color:yellow; left:200px; top:0px;}
-    50%{background-color:blue; left:200px; top:0px;}
-    75%{background-color: green; left:0px; top:200px;}
-    100%{background-color: red; left:0px; top:0px;}
+ul{
+list-style:none;
+margin:0;
+padding:0;
+overflow:auto;
 }
-@keyframes exp2{
-    0%{background-color: red; left:0px; top:0px;}
-    25%{background-color: yellow; left:200px; top:0px;}
-    50%{background-color: blue; left:200px;top:0px;}
-    75%{background-color:green; left:0px; top:200px;}
-    100%{background-color:red; left:0px; top:0px;}
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color: #f9f9f9;
+    min-width:160px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-@keyframes exp3{
-    0%{background-color: red; left: 0px; top: 0px;}
-    25%{background-color: yellow; left: 200px; top: 0px;}
-    50%{background-color:green; left:0px; top:200px;}
-    75%{background-color: blue; left: 200px; top: 0px;}
-    100%{background-color: red; left: 0px; top: 0px;}
+.dropbtn{
+    display:inline-block;
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+    background-color: #3e8e41;
 }
-@keyframes exp4{
-    0%{background-color: red; left:0px; top:0px;}
-    25%{background-color: yellow; left:200px; top:0px;}
-    50%{background-color: blue; left:200px; top:0px;}
-    75%{background-color: green; left:0px;top:200px;}
-    100%{background-color: red; left:0px; top:0px;}
+.dropdown-content a {
+    color:black;
+    padding:12px 16px;
+    text-decoration: none;
+    display:block;
+    text-align:left;
 }
-.ok{
-    width:100px;
-    height:100px;
-    background-color: red;
+.dropdown{
     position:relative;
-    animation-name:example;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    margin-left: 50%;
-    margin-bottom:10px;
+    display:inline-block;
 }
-.mhm{
-    width:100px;
-    height:100px;
-    background-color: red;
-    position: relative;
-    animation: exp2 3s ease-in infinite 2s alternate-reverse;
-    margin-left: 50%;
-    margin-bottom: 10px;
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    min-width:160px;
+    box-shadow: 0px 8px 16px 0px;
 }
-.yaya{
-    width:100px;
-    height:100px;
-    background-color: red;
-    position: relative;
-    animation: exp3 3s ease infinite 2s reverse;
-    margin-left: 50%;
-    margin-bottom: 10px;
+.dropdown:hover .dropdown-content{
+    display:block;
 }
-.zuzu{
-    width:100px;
-    height:100px;
-    background-color: red;
-    position:relative;
-    animation: exp4 3s ease-out infinite 2s normal;
-    margin-left: 50%;
-    margin-bottom:10px;
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
 }
