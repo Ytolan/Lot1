@@ -13,16 +13,53 @@ body{
 }
 
 .button{
-    background-color: #4CAF50;
     border: 1px solid black;
-    padding:15px 32px;
+    padding: 15px 32px;
     text-align: center;
-    text-decoration:none;
-    display:inline-block;
-    font-size:4px 2px;
-    cursor:pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 4px 2px;
+    cursor: pointer;
 }
-.button2{background-color: #008CBA;}
-.button3{background-color: #f44336;}
-.button4{background-color: #e7e7e7; color:black;}
-.button5{background-color: #555555;}
+h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.container{
+    width:100%;
+    height: auto;
+    margin-left: 35%;
+}
+
+.button1{
+    background-color: #4CAF50; 
+    color:white; 
+}
+.button2{
+    background-color: #008CBA; 
+    color:black;}
+.button3{
+    background-color: #f44336; 
+    color:black}
+.button4{
+    background-color: #e7e7e7; 
+    color:black;}
+.button5{
+    background-color: #555555; 
+    color:black;}
+.button1:hover{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button2:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button3:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button4:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button5:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
