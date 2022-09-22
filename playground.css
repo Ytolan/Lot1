@@ -15,31 +15,21 @@ h2{
     text-align: center;
     font-weight: bold;
 }
-.pagination{
-    display:inline-block;
-    text-align: center;
-    margin-left: 40%;
-}
-.pagination a{
-    color:black;
-    float: left;
+ul.breadcrumb {
     padding: 8px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+ul.breadcrumb li a{
     text-decoration: none;
-    transition: background-color .3s;
-    border: 1px solid #ddd;
-    margin: 0 4px;
-    font-size:22px;
-    text-align: center;
+    color:#333;
+    background-color: #f1f1f1;
 }
-.pagnation a:hover:not(.active){
-    background-color: #ddd;
+ul.breadcrumb li{
+    display:inline;
 }
-.pagnation .active{
-    background-color: cadetblue;
-    color: #ddd;
-}
-.clearfix{
-    content: " ";
-    display: table;
-    clear: both;
+ul.breadcrumb li+li:before{ /* this creates the clash behind each  li element*/
+    padding:8px;
+    color:black;
+    content: "/\00a0";
 }
