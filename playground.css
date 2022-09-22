@@ -15,10 +15,19 @@ h2{
     text-align: center;
     font-weight: bold;
 }
+.pagination{
+    display:inline-block;
+    margin-left:40%;
+}
 .pagination a{
     color:black;
     float:left;
     padding: 8px 16px;
     text-decoration: none;
+    transition: background-color .3s;
+    border:1px solid #ddd
+}
+.pagination a:hover{
+    background-color: #ddd;
 
 }
