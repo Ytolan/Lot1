@@ -15,21 +15,32 @@ h2{
     text-align: center;
     font-weight: bold;
 }
-ul.breadcrumb {
-    padding: 8px 16px;
-    list-style: none;
-    background-color: #eee;
+.example{
+    text-align: center;
+    padding:0;
+    margin:0;
 }
-ul.breadcrumb li a{
-    text-decoration: none;
-    color:#333;
-    background-color: #f1f1f1;
+#exp1,#exp2,#exp3{
+    display: inline-block;
+    margin: 15px;
+    max-width: 200px;
 }
-ul.breadcrumb li{
-    display:inline;
+#exp1{
+    resize:horizontal;
+    overflow: auto;
+    outline:2px dotted cadetblue;
+    outline-offset: 10px;
 }
-ul.breadcrumb li+li:before{ /* this creates the clash behind each  li element*/
-    padding:8px;
-    color:black;
-    content: "/\00a0";
+#exp2{
+    resize:vertical;
+    overflow:auto;
+    outline:2px dotted cornflowerblue;
+    outline-offset: 10px;
+
+}
+#exp3{
+    resize:both;
+    overflow: auto;
+    outline:2px dotted coral;
+    outline-offset: 10px;
 }
