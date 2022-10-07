@@ -5,22 +5,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
 }
-.playground{
-    text-align: center;
-    background-color: #cad;
-    color:whitesmoke;
-    padding: 5px;
-}
-.grid-container{
-    display:inline-grid;
-    background-color: #2196F3;
-    padding: 10px;
-    grid-template-columns: auto auto auto;
-}
-.grid-item{
-    background-color: cadetblue;
-    border:1px solid rgba(0,0,0,0.8);
-    padding:20px;
-    font-size:30px;
-    text-align: center;
+#mainscrn{
+    border:1px solid #000;
+    width:100%;
 }
